@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div class="container">
+	<audio id="audio" autoplay>
+		<source src="https://github.com/Forsakenn05/hello/raw/main/y2mate.com%20-%20%E4%BA%94%E7%AD%89%E5%88%86%E3%81%AE%E8%8A%B1%E5%AB%81%E3%81%82%E3%82%8A%E3%81%8C%E3%81%A8%E3%81%86%E3%81%AE%E8%8A%B1%E3%82%A6%E3%82%A7%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0ver%E3%83%A1%E3%82%A4%E3%82%AD%E3%83%B3%E3%82%B0%E6%98%A0%E5%83%8F.mp3" type="audio/mpeg">
+	</audio>
+
+	<button id="playPauseBTN" onclick="playPause()">
+<img src='https://cdn.discordapp.com/attachments/1006128919440805941/1114558920376201226/unmuted.png' width='30' height='30'>
+</button>
+</div>
+<script type="text/javascript">
+	var audio = document.getElementById('audio');
+var playPauseBTN = document.getElementById('playPauseBTN');
+var count = 0;
+
+function playPause(){
+	if(count == 1){
+		count = 0;
+		audio.play();
+		playPauseBTN.innerHTML = "<img src='https://cdn.discordapp.com/attachments/1006128919440805941/1114558920376201226/unmuted.png' width='30' height='30'>";
+	}else{
+		count = 1;
+		audio.pause();
+		playPauseBTN.innerHTML = "<img src='https://cdn.discordapp.com/attachments/1006128919440805941/1114826033565286441/muted.png' width='30' height='30'>";
+	}
+
+}
+
+</script>
+
+</body>
+</html> 
